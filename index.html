@@ -47,6 +47,57 @@
             width: 100%;
             bottom: 0;
         }
+        /* Thêm CSS mới cho phần release ở đây */
+        .release-container {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .release-container h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .release-container ul {
+            padding-left: 20px;
+        }
+
+        .release-container li {
+            margin-bottom: 5px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive design cho màn hình nhỏ */
+        @media (max-width: 600px) {
+            .release-container {
+                padding: 15px;
+            }
+
+            .download-button {
+                display: block;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -71,6 +122,17 @@
                 <source src="your-video-file.mp4" type="video/mp4">
                 Trình duyệt của bạn không hỗ trợ thẻ video.
             </video>
+<!-- Phần tiếp theo-->
+             <div class="release-container">
+        <h2>Phiên bản mới nhất</h2>
+        <p><strong>Version 1.0.0</strong> đã được phát hành!</p>
+        <p>Tính năng mới:</p>
+        <ul>
+            <li>Tính năng 1</li>
+            <li>Tính năng 2</li>
+        </ul>
+        <a href="https://github.com/Thanhchung8888/my-app-installer/releases/download/v1.0.0/MyApp_Setup.exe" class="download-button">Tải xuống ngay</a>
+       
         </div>
     </section>
 
